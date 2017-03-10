@@ -4,7 +4,6 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   def hello
-    #byebug
     if !session[:name]
       render "sessions/login"
     end
